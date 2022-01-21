@@ -21,7 +21,6 @@ function changeColor(){
 clickMe.addEventListener('click',changeColor);
 
 function handlemouseMove(){
-    let randomColor=colorGenerator();
 
     mouseMove.style.backgroundColor=colorGenerator();
 }
