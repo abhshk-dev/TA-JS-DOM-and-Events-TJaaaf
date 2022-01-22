@@ -6,13 +6,18 @@ for(let i=1;i<=504;i++){
     div.classList.add('box');
     
 
-    let h2=document.createElement('h2');
-    h2.innerText='Math.floor(Math.random()*504)';
-
-    div.append('h2');
+    let h3=document.createElement('h3');
+    let random=getrandomNum(504);
+    h3.innerText=random;
+    div.append(h3);
     container.append(div);
 }
 
+//random number 
+
+ function getrandomNum(max){
+    return Math.floor(Math.random() * max);
+ }
 // random color
 
 function getRandomColor () {
@@ -24,13 +29,15 @@ function getRandomColor () {
          }
          return color;
      }
+// Event handler function
 
-function hanleMouse(){
-    let allBox=document.querySelector('.box');
-    for(let box of allBox){
+function handleMouse(){
+    let allBoxes=document.querySelectorAll('.box');
+    allBoxes.forEach((box)=>{
         box.style.backgroundColor=getRandomColor();
-        box.innerHTML=`<h2>${Math.floor(Math.random()*504)}</h2>`
-    }
+        box.querySelector('h3').innerText=getrandomNum(500);
+    });
 }
 
-     container.addEventListener('mousemove',)
+// mousemove event 
+     container.addEventListener('mousemove',handleMouse)
