@@ -1,29 +1,31 @@
 // without event delegation.
 
-let allBoxes=document.querySelector('.boxes');
+let firstBox=document.querySelectorAll('.first li');
 
-/*
- <div class="wrapper">
-        <h2>Without Event Deligation</h2>
-        <ul class="boxes">
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-        </ul>
-      </div> 
-*/
 
-let box=document.querySelectorAll('.box');
+firstBox.forEach((box,index)=>{
+    
+    box.addEventListener("click",function(event){
+        console.log(index);
+        event.target.innerText=index+1;
+    
 
-for(let i=1;i<=12;i++){
-    box.innerHTML=`<li> ${i}</li>`
-}
+    setTimeout(()=>{
+        event.target.innerText="";
+    },5000);
+});
+});
+
+
+//With event delegation 
+
+let secondBox=document.querySelector('.second');
+
+secondBox.addEventListener("click",function(event){
+    let text=event.target.dataset.text;
+    event.target.innerText=text;
+
+    setTimeout(()=>{
+        event.target.innerText="";
+    },5000);
+})
