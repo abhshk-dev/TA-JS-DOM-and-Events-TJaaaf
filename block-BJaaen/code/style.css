@@ -126,6 +126,9 @@ i{
     color: crimson;
     
 }
+.active i{
+    color: black ;
+}
 
 /*----footer ----*/
 
@@ -136,4 +139,19 @@ i{
 
 .reset i{
     font-size: 2rem;
+}
+
+.game-result{
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+    background-color:rgb(30,144,255);
+    padding-top: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    align-content: center;
+    color: #fff;
+}
+.reset{
+    cursor: pointer;
 }

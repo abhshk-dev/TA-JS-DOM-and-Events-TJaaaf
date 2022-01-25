@@ -18,36 +18,37 @@
       </header>
       <div class="game-body">
         <div class="player">
-          <h3>YOU-0</h3>
-          <!-- Rock -->
-          <i class="fa fa-hand-rock-o " data-r="rock" aria-hidden="true"></i>
-
-          <!-- Paper -->
-          <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
-
-          <!-- Scissors -->
-          <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+          <h3>YOU- <span class="score">0</span></h3>
+          <ul class="user-icons flex">
+            
+          </ul>
         </div>
         <div class="computer">
-          <h3>COMPUTER-0</h3>
-          <!-- Rock -->
-          <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
-
-          <!-- Paper -->
-          <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
-
-          <!-- Scissors -->
-          <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+          <h3>COMPUTER-<span class="score">0</span></h3>
+          <ul class="comp-icons flex">
+            <li>
+              <!-- Rock -->
+              <i class="fa fa-hand-rock-o " aria-hidden="true"></i>
+            </li>
+            <li>
+              <!-- Paper -->
+              <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            </li>
+            <li>
+              <!-- Scissors -->
+              <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+            </li>
+          </ul>
         </div>
         <button class="reset">
           <i class="fas fa-sync-alt"></i>
         </button>
-        
+
       </div>
       <footer class="game-result flex ">
-        <h3>You won!</h3>
+        <h3></h3>
       </footer>
-      
+
     </section>
   </main>
   <script src="./script.js"></script>
