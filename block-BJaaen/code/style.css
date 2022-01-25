@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styling */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    max-width: 650px;
+    max-height: 1000px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 22px rgba(0,0,0,0.6);
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: none;
+    background:none;
+    color: #000;
+}
+h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding:1rem 0;
+    font-family:'Courier New', Courier, monospace;
+    text-align: left;
+}
+i{
+    font-size: 4rem;
+    text-decoration: none;
+    margin-right: 3rem;
+}
+/*------ Header------- */
+
+.game-header{
+    background-color: rgb(30,144,255);
+    border-top-left-radius:1rem ;
+    border-top-right-radius:1rem ;
+}
+.game-header h1{
+    font-size: 3rem;
+    color: #fff;
+    padding: 2rem 3rem;
+}
+
+
+/*-----Game Body -----*/
+.game-body{
+    padding: 4rem 5rem ;
+}
+
+.player{
+    padding-bottom: 2rem;
+}
+.player i{
+    cursor: pointer;
+    color:rgb(30,144,255);
+}
+
+.computer{
+    padding-bottom:2rem;
+}
+.computer i{
+    color: crimson;
+    
+}
+.active i{
+    color: black ;
+}
+
+/*----footer ----*/
+
+.game-result{
+    padding-bottom: 3rem;
+    margin-top: -2rem;
+}
+
+.reset i{
+    font-size: 2rem;
+}
+
+.game-result{
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+    background-color:rgb(30,144,255);
+    padding-top: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    align-content: center;
+    color: #fff;
+}
+.reset{
+    cursor: pointer;
+}
