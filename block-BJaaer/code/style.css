@@ -91,3 +91,13 @@ input[type='text'] {
 .terms {
   display: inline-block;
 }
+
+
+/*----Modal styling ----*/
+
+.modalContainer{
+  width: 450px;
+  height: 600px;
+  background-color: #fff;
+  padding: 2rem;
+}
