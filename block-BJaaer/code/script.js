@@ -20,13 +20,13 @@ function handleSubmit(event) {
 
 
     modal.classList.add("open");
-    close.addEventListener("click", (event) => {
+    close.addEventListener("click", () => {
         modal.classList.remove("open");
         elements.name.value = "";
         elements.email.value = "";
         elements.movie.value = "";
-        elements.book.value = "";
-        elements.terms.checked = "";
+        elements.book.value =0 ;
+        elements.terms.checked = false;
 
     });
 
