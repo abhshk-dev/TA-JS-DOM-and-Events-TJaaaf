@@ -105,7 +105,7 @@ input[type='text'] {
   width: 100%;
   background-color: #fff;
   padding: 2rem;
-  
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.2);
   top: 300px;
   left: 560px;
   bottom: 300px;
