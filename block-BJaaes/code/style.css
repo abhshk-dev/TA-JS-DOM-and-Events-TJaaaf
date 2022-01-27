@@ -89,7 +89,9 @@ input[type='text'], input[type = "password"] ,input[type="tel"],input[type="emai
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 small{
-  color: rgb(233, 116, 116);
+  color: rgb(224, 53, 53);
+  margin-top: 0.2rem;
+  font-size: 0.99rem;
   
 }
 
@@ -106,4 +108,13 @@ button{
 }
 label{
   font-size: 1.2rem;
+}
+.form-control.error input{
+  border:3px solid #e74c3c;
+  
+}
+
+.form-control.success input{
+  border: 3px solid rgb(100, 179, 100);
+  
 }
