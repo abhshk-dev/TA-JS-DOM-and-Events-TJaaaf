@@ -1,0 +1,109 @@
+/* CSS Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ----Custom styling ----*/
+
+*,*::before,*::after{
+  box-sizing: border-box;
+} 
+html{
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: rgba(241, 200, 143, 0.34);
+  padding-top: 10rem;
+}
+h1{
+  font-size: 2rem;
+  font-size: 900;
+  color: rgb(233, 116, 116);
+  padding: 1rem 0;
+}
+
+.container{
+  max-width: 450px;
+  width: 100%;
+  border: 1px solid black;
+  margin: 2rem auto;
+  background-color: white;
+  
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.form-control{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+input[type="text"]{
+  width: 100%;
+}
+input[type='text'], input[type = "password"] ,input[type="tel"],input[type="email"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+small{
+  color: rgb(233, 116, 116);
+  
+}
+
+button{
+  margin: 1rem 0.1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  background:rgba(0, 0, 0, 0.345);
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+
+}
+label{
+  font-size: 1.2rem;
+}
