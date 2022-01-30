@@ -148,3 +148,25 @@ img{
   width: 100%;
   border-radius: 0.4rem;
 }
+
+/*----tags----*/
+
+.tag-holder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin:  0 2rem;
+}
+.tags{
+  padding: 0.5rem  ;
+  background-color: black;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+}
+.tags:hover{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
